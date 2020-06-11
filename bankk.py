@@ -6,14 +6,14 @@ print("=== ENGINE INTEGRASI TOKO DENGAN BANK ===")
 while (1):
     connection_to_toko = 1
     try:
-        connToko = pymysql.connect(host='localhost', user='root', passwd='', db='db_toko')
+        connToko = pymysql.connect(host='remotemysql.com', user='pvpFOiEYBa', passwd='B3Ycyj91Zv', db='pvpFOiEYBa')
         curToko = connToko.cursor()
     except:
         print("can't connect to TOKO")
         connection_to_toko = 0
 
     try:
-        connBank = pymysql.connect(host='localhost', user='root', passwd='', db='db_bankk')
+        connBank = pymysql.connect(host='remotemysql.com', user='4QVW7rKZGz', passwd='haWeZTI1cq', db='4QVW7rKZGz')
         curBank = connBank.cursor()
     except:
         print("can't connect to BANK")
